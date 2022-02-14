@@ -1,7 +1,6 @@
 micronaut:
   application:
-    name: pam-template-gradle
-  server:
+    name: pam-matchprofile-poc
     thread-selection: auto
   http:
     client:
@@ -43,6 +42,13 @@ jackson:
   serialization:
     indentOutput: true
 
+janzz:
+  url: https://localhost/japi
+  token: "token 123"
+
+ad:
+  apiUrl: https://pam-ad.intern.nav.no/api/v1
+  searchApiUrl: https://pam-search-api.prod-gcp.nais.io
 #datasources:
 #  default:
 #    url: ${DB_JDBC_URL:`jdbc:tc:postgresql:12:///puls?TC_INITSCRIPT=postgres/postgres-init.sql`}
