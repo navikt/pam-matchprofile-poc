@@ -17,6 +17,8 @@ val jakartaPersistenceVersion= project.properties["jakartaPersistenceVersion"]
 val postgresqlVersion= project.properties["postgresqlVersion"]
 val tcVersion= project.properties["tcVersion"]
 val javaVersion= project.properties["javaVersion"]
+val openSearchRestClientVersion= project.properties["openSearchRestClientVersion"]
+val jakartaJsonVersion= project.properties["jakartaJsonVersion"]
 
 repositories {
     mavenLocal()
@@ -57,6 +59,8 @@ dependencies {
     implementation("org.postgresql:postgresql:${postgresqlVersion}")
     implementation("io.micronaut.sql:micronaut-jdbc-hikari")
     implementation("io.micronaut.flyway:micronaut-flyway")
+    implementation("org.opensearch.client:opensearch-rest-high-level-client:${openSearchRestClientVersion}")
+    implementation("jakarta.json:jakarta.json-api:${jakartaJsonVersion}")
     testImplementation("io.micronaut.test:micronaut-test-junit5")
     testImplementation("org.junit.jupiter:junit-jupiter-engine")
     testImplementation("org.testcontainers:postgresql:${tcVersion}")
