@@ -1,11 +1,3 @@
-plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.5.31"
-    id("org.jetbrains.kotlin.kapt") version "1.5.31"
-    id("com.github.johnrengelman.shadow") version "7.1.0"
-    id("io.micronaut.application") version "2.0.6"
-    id("org.jetbrains.kotlin.plugin.allopen") version "1.5.31"
-}
-
 version = "0.1"
 group "no.nav.arbeidsplassen"
 
@@ -19,6 +11,14 @@ val tcVersion= project.properties["tcVersion"]
 val javaVersion= project.properties["javaVersion"]
 val openSearchRestClientVersion= project.properties["openSearchRestClientVersion"]
 val jakartaJsonVersion= project.properties["jakartaJsonVersion"]
+
+plugins {
+    id("org.jetbrains.kotlin.jvm") version "1.6.10"
+    id("org.jetbrains.kotlin.kapt") version "1.6.10"
+    id("com.github.johnrengelman.shadow") version "7.1.0"
+    id("io.micronaut.application") version "3.2.1"
+    id("org.jetbrains.kotlin.plugin.allopen") version "1.6.10"
+}
 
 repositories {
     mavenLocal()
